@@ -86,16 +86,24 @@ body{
     
     font-weight: bold;
 }
+
 .feed-see-more:hover{
     cursor: pointer;
 }
 .feed-like-btn:hover{
     cursor: pointer;
 }
+.feed-cmt-count{
+    padding: 5px;
+}
+.feed-footer{
+    display:flex;
+    justify-content: space-between;
+}
 
 @media only screen and (max-width: 800px){
     .eed-container{
         width: fit-content;
-        padding: 0px 10px 0px 10px;
+        padding: 5px 5px;
     }
 }

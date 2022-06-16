@@ -27,12 +27,12 @@ function App() {
         >
           See more
         </p>
-        
+
         <p className={seeMore ? 'show-sol expanded-sol' : 'show-sol'}>
           <p>The Solution I tried:</p>
           <p>1. Uninstalled Xcode and Installed it again.</p>
           <p>2. Delete Developer file from User/library.</p>
-          <p onClick={handleSeeMore}> See Less</p>
+          <p onClick={handleSeeMore} className ='feed-see-less'> See Less</p>
         </p>
 
       </div>
@@ -53,17 +53,22 @@ function App() {
 
 
       <hr className='hr' />
-      <div className="feed-like-cmt">
+      <div className='feed-footer'>
+        <div className="feed-like-cmt">
+          <p onClick={handleLike} className={like ? 'feed-like-btn liked' : 'feed-like-btn'}>
+            < BiLike
+              className='like-btn'
 
-        <p onClick ={handleLike} className={like ? 'feed-like-btn liked' : 'feed-like-btn'}>
-          < BiLike
-            className='like-btn'
-            
-          />
-          Like
-        </p>
+            />
+            Like
+          </p>
 
-        <p className="feed-cmt-btn"><BiComment className='cmt-btn' />Comment</p>
+          <p className="feed-cmt-btn">
+            <BiComment className='cmt-btn' />
+            Comment
+          </p>
+        </div>
+        <p className='feed-cmt-count'>8 comments</p>
       </div>
     </div>
   )
