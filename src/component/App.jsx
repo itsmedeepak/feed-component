@@ -21,19 +21,19 @@ function App() {
 
 
       <div className="feed-see-more">
-        <a
+        <p
           className={seeMore ? 'feed-see-more expanded' : 'feed-see-more'}
           onClick={handleSeeMore}
         >
           See more
-        </a>
+        </p>
         
-        <a className={seeMore ? 'show-sol expanded-sol' : 'show-sol'}>
+        <p className={seeMore ? 'show-sol expanded-sol' : 'show-sol'}>
           <p>The Solution I tried:</p>
           <p>1. Uninstalled Xcode and Installed it again.</p>
           <p>2. Delete Developer file from User/library.</p>
-          <a onClick={handleSeeMore}> See Less</a>
-        </a>
+          <p onClick={handleSeeMore}> See Less</p>
+        </p>
 
       </div>
 
